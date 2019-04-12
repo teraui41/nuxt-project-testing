@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index spec should render proper 1`] = `
+<div>
+  
+  Hello
+
+</div>
+`;

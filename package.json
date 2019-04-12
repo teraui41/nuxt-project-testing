@@ -1,0 +1,35 @@
+{
+  "name": "nuxt-project-testing",
+  "version": "0.0.1",
+  "description": "for interview",
+  "main": "index.ts",
+  "scripts": {
+    "test": "nuxt build && TZ=Asia/Taipei jest",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nuxt/typescript": "^2.6.1",
+    "nuxt": "^2.6.1",
+    "ts-node": "^8.0.3",
+    "ts-vue-plugin": "^0.2.0",
+    "typescript": "^3.4.3",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.1.0"
+  },
+  "devDependencies": {
+    "@nuxt/config-edge": "^2.6.2-25915688.22138535",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.4",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "jest": "^24.7.1",
+    "jest-serializer-vue": "^2.0.2",
+    "ts-jest": "23.0.1",
+    "tslint": "^5.15.0",
+    "vue-jest": "4.0.0-beta.2",
+    "vue-loader": "^15.7.0"
+  }
+}
