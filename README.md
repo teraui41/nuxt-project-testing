@@ -1,6 +1,10 @@
-### Nuxt js testing project
+### Nuxt js Coding Test
 
-1. create a PR the resolve the testing issue
-2. write the unit test
-3. make sure check list are all checked
-4. status check should be passed
+Welcome contestants, Please follow the instruction below and finish your test, good luck!
+
+1. Solve the Test issue then request for a PR
+2. Write the unit test for your code
+3. Make sure the checklist are all checked
+4. Status check should be passed
+
+That's All, may the force be with you and welcome to XTEAM Studio!
