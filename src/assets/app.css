@@ -1,0 +1,11 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  min-height: 100vh
+}
+
+#__nuxt, #__layout {
+  position: relative;
+  min-height: 100vh;
+}

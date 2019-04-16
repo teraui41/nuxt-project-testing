@@ -13,10 +13,15 @@
   "license": "ISC",
   "dependencies": {
     "@nuxt/typescript": "^2.6.1",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.18",
+    "node-sass": "^4.11.0",
     "nuxt": "^2.6.1",
+    "sass-loader": "^7.1.0",
     "ts-node": "^8.0.3",
     "ts-vue-plugin": "^0.2.0",
     "typescript": "^3.4.3",
+    "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0"
   },

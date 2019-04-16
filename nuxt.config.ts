@@ -29,7 +29,9 @@ const config: NuxtConfiguration = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: [
+    '@/plugins/bootstrap-vue',
+  ],
 
   /*
   ** Nuxt.js modules
@@ -46,7 +48,7 @@ const config: NuxtConfiguration = {
   },
 
   server: {
-    port: 3000,
+    port: 8099,
     host: "0.0.0.0",
   },
 };
