@@ -1,4 +1,4 @@
-### Nuxt js Coding Test
+### Nuxt.js Coding Test
 
 Welcome contestants, Please follow the instruction below and finish your test, good luck!
 
