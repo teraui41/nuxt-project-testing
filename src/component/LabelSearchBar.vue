@@ -4,10 +4,18 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">{{"Find Label Function Block"}}</h5>
-          <div class="">
+          <div class="form-group col-md-6">
+            <label>Search Code Input</label>
+            <input 
+              type="text"
+              class="form-control"
+              placeholder="please input the permission code"
+              v-model="searchedCode"/>
           </div>
-
-          <input type="text" class="form-control" placeholder="please input the permission code" />
+          <div class="form-group col-md-6">
+            <label>Result Code</label>
+            <input type="text" class="form-control" placeholder="search result" readOnly v-model="resultCode"/>
+          </div>
         </div>
       </div>
     </div>
@@ -15,19 +23,26 @@
 </template>
 
 <script lang="ts">
+
   export default {
     name: "LabelSearchBar",
+    props: [
+      'permissionData'
+    ],
     data() {
       return {
         title: "Hello",
-        permissionCode: "",
+        searchedCode: "",
       };
-    }
+    },
+    computed: {
+      resultCode: function() {
+        const permission = this.permissionData[this.searchedCode];
+        return permission ? permission.label : ""
+      },
+    },
   };
 </script>
 
 <style lang="scss" scoped>
-  .Panel {
-
-  }
 </style>

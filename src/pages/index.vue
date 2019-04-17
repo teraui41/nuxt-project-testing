@@ -2,7 +2,8 @@
   <div class="bg">
     <div class="container panel">
       <h1>{{name}}</h1>
-      <LabelSearchBar/>
+      <LabelSearchBar v-bind:permissionData="permissionData"/>
+      <hr/>
       <TreeComponent/>
     </div>
   </div>
@@ -23,11 +24,12 @@
     },
     mounted(){
       const permissions = flatPermissionList(mockPermissions);
-      console.log("permissions", permissions);
+      this.permissionData = permissions;
     },
     data() {
       return {
         name: "Edmond Wu",
+        permissionData: {},
       };
     }
   };
