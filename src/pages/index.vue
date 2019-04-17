@@ -1,6 +1,7 @@
 <template>
   <div class="bg">
     <div class="container panel">
+      <h1>{{name}}</h1>
       <LabelSearchBar/>
       <TreeComponent/>
     </div>
@@ -10,7 +11,7 @@
 <script lang="ts">
 
   import LabelSearchBar from '../component/LabelSearchBar.vue';
-  import TreeComponent from '../component/TreeComponent.vue';
+  import TreeComponent from '../component/TreeComponent/index.vue';
   import { mockPermissions } from '../../dummies/mockPermissions';
   import { flatPermissionList, findLabel } from '../utils/findLabel';
 
@@ -26,7 +27,7 @@
     },
     data() {
       return {
-        msg: "Hello",
+        name: "Edmond Wu",
       };
     }
   };

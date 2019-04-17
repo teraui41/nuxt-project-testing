@@ -1,7 +1,15 @@
 <template>
   <div class="row">
-    <div class="col-xs-12">
-      {{msg}}
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{"Find Label Function Block"}}</h5>
+          <div class="">
+          </div>
+
+          <input type="text" class="form-control" placeholder="please input the permission code" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -11,7 +19,8 @@
     name: "LabelSearchBar",
     data() {
       return {
-        msg: "Hello",
+        title: "Hello",
+        permissionCode: "",
       };
     }
   };
