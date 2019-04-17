@@ -22,7 +22,7 @@ export function findLabel(code: string, permissions: Permissions): string {
 
   const result: any = flatList[code];
 
-  return result !== null
+  return result !== undefined
     ? result.label
     : "";
 }
