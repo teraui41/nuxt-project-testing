@@ -1,6 +1,5 @@
 <template>
-  <div class="row">
-    <div class="col-12">
+    <div class="col-12 col-lg-6">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">{{"Find Label Function Block"}}</h5>
@@ -19,7 +18,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script lang="ts">
@@ -29,6 +27,8 @@
     props: [
       'permissionData'
     ],
+    mounted() {}
+    ,
     data() {
       return {
         title: "Hello",
@@ -45,4 +45,7 @@
 </script>
 
 <style lang="scss" scoped>
+  .card {
+    margin-bottom: 15px;
+  }
 </style>

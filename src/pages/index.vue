@@ -2,15 +2,15 @@
   <div class="bg">
     <div class="container panel">
       <h1>{{name}}</h1>
-      <LabelSearchBar v-bind:permissionData="permissionData"/>
-      <hr/>
-      <TreeComponent/>
+      <div class="row">
+        <LabelSearchBar v-bind:permissionData="permissionData"/>
+        <TreeComponent v-bind:permissionData="permissionData"/>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-
   import LabelSearchBar from '../component/LabelSearchBar.vue';
   import TreeComponent from '../component/TreeComponent/index.vue';
   import { mockPermissions } from '../../dummies/mockPermissions';
