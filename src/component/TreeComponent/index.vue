@@ -29,8 +29,23 @@
     },
     methods: {
       onChangeHandler: function(code) {
-				console.log("TCL: code", code)
-        if(this.checkedList.includes(code)) {
+
+        const permission = this.permissionData[code];
+        const isCheck = !this.isCheck(code);
+        const isParentCheck = this.isCheck(permission.parent);
+
+        this.updateChekedList(code);
+
+        if(permission.parent !== '' && isCheck && !isParentCheck){
+          return this.onChangeHandler(permission.parent);
+        }
+        
+      },
+      isCheck: function(code) {
+        return this.checkedList.includes(code);
+      },
+      updateChekedList: function(code) {
+        if(this.isCheck(code)) {
           const index = this.checkedList.indexOf(code);
           this.checkedList.splice(index, 1)
         }else {

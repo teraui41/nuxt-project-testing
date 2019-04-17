@@ -29,6 +29,7 @@
         }
       },
       checked: function() {
+        console.log("TCL: this.checkedList", this.checkedList)
         return this.checkedList.includes(this.code);
       }
     },
