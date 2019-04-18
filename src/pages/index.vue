@@ -11,20 +11,14 @@
 </template>
 
 <script lang="ts">
-  import LabelSearchBar from '../component/LabelSearchBar.vue';
-  import TreeComponent from '../component/TreeComponent/index.vue';
-  import { mockPermissions } from '../../dummies/mockPermissions';
-  import { flatPermissionList, findLabel } from '../utils/findLabel';
+  import LabelSearchBar from '../components/LabelSearchBar.vue';
+  import TreeComponent from '../components/TreeComponent/index.vue';
 
   export default {
     name: "index",
     components: {
       LabelSearchBar,
       TreeComponent
-    },
-    mounted(){
-      const permissions = flatPermissionList(mockPermissions);
-      this.permissionData = permissions;
     },
     data() {
       return {

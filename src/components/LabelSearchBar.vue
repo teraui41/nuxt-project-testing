@@ -4,16 +4,16 @@
         <div class="card-body">
           <h5 class="card-title">{{"Find Label Function Block"}}</h5>
           <div class="form-group col-md-6">
-            <label>Search Code Input</label>
+            <label>Imput permission code.</label>
             <input 
               type="text"
               class="form-control"
-              placeholder="please input the permission code"
+              placeholder="please input permission code"
               v-model="searchedCode"/>
           </div>
           <div class="form-group col-md-6">
-            <label>Result Code</label>
-            <input type="text" class="form-control" placeholder="search result" readOnly v-model="resultCode"/>
+            <label>Output permission code.</label>
+            <input type="text" class="form-control" placeholder="Here will show the search result." readOnly v-model="resultLabel"/>
           </div>
         </div>
       </div>
@@ -21,7 +21,8 @@
 </template>
 
 <script lang="ts">
-
+  import { mockPermissions } from '../../dummies/mockPermissions';
+  import { findLabel } from '../utils/findLabel';
   export default {
     name: "LabelSearchBar",
     props: [
@@ -31,15 +32,14 @@
     ,
     data() {
       return {
-        title: "Hello",
         searchedCode: "",
+        resultLabel: "",
       };
     },
-    computed: {
-      resultCode: function() {
-        const permission = this.permissionData[this.searchedCode];
-        return permission ? permission.label : ""
-      },
+    watch: {
+      searchedCode: function(code) {
+        this.resultLabel = findLabel(code, mockPermissions);
+      }
     },
   };
 </script>

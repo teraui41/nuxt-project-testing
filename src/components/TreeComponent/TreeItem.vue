@@ -1,9 +1,16 @@
 <template>
+<div>
   <div class="check-item" >
     <span v-bind:style="levelStyle" v-bind:class="(level === 0)? 'root-class': 'child-class'"></span>
     <input class="form-check-input" type="checkbox" v-bind:name="code" v-bind:id="code" v-bind:value="code" v-bind:checked="checked" v-on:change="onChangeHandler" >
     <label class="form-check-label" for="inlineRadio1">{{label}}</label>
   </div>
+  <div  v-if="hasChildren">
+    <div class="tree-panel" v-for="item in children" v-bind:key="item.index">
+      <TreeItem v-bind:code="item.code" v-bind:label="item.label" v-bind:level="nextLevel" />
+    </div>
+  </div>
+</div>
 </template>
 
 <script lang="ts">
@@ -13,7 +20,7 @@
       "code",
       "label",
       "level",
-      "checkedList",
+      "children",
     ],
     data() {
       return {
@@ -21,6 +28,10 @@
       };
     },
     computed: {
+      hasChildren: function() {
+        if(!this.children || !Array.isArray(this.children)) return false;
+        return this.children.length > 0;
+      },
       levelStyle: function() {
         const levelpadding = this.level * 30;
 
@@ -28,8 +39,8 @@
           paddingLeft: `${levelpadding}px`
         }
       },
-      checked: function() {
-        return this.checkedList.includes(this.code);
+      nextLevel: function() {
+        return this.level + 1;
       }
     },
     methods: {
