@@ -168,7 +168,39 @@ exports[`index spec should render proper 1`] = `
                         </label>
                       </div>
                        
-                      <!---->
+                      <div>
+                        <div
+                          class="tree-panel"
+                        >
+                          <div>
+                            <div
+                              class="check-item"
+                            >
+                              <span
+                                class="child-class"
+                                style="padding-left: 60px;"
+                              />
+                               
+                              <input
+                                class="form-check-input"
+                                id="code B-1-1"
+                                name="code B-1-1"
+                                type="checkbox"
+                                value="code B-1-1"
+                              />
+                               
+                              <label
+                                class="form-check-label"
+                                for="inlineRadio1"
+                              >
+                                label B-1-1
+                              </label>
+                            </div>
+                             
+                            <!---->
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div

@@ -7,7 +7,7 @@
   </div>
   <div  v-if="hasChildren">
     <div class="tree-panel" v-for="item in children" v-bind:key="item.index">
-      <TreeItem v-bind:code="item.code" v-bind:label="item.label" v-bind:level="nextLevel" />
+      <TreeItem v-bind:code="item.code" v-bind:label="item.label" v-bind:level="nextLevel" v-bind:children="item.children"/>
     </div>
   </div>
 </div>
