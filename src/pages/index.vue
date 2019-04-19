@@ -3,7 +3,7 @@
     <div class="container panel">
       <h1>{{name}}</h1>
       <div class="row">
-        <LabelSearchBar v-bind:permissionData="permissionData"/>
+        <SearchLabelPanel v-bind:permissionData="permissionData"/>
         <TreeComponent v-bind:permissionData="permissionData"/>
       </div>
     </div>
@@ -11,13 +11,13 @@
 </template>
 
 <script lang="ts">
-  import LabelSearchBar from '../components/LabelSearchBar.vue';
+  import SearchLabelPanel from '../components/SearchLabelPanel.vue';
   import TreeComponent from '../components/TreeComponent/index.vue';
 
   export default {
     name: "index",
     components: {
-      LabelSearchBar,
+      SearchLabelPanel,
       TreeComponent
     },
     data() {

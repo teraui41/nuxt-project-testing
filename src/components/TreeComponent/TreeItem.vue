@@ -2,7 +2,7 @@
 <div>
   <div class="check-item" >
     <span v-bind:style="levelStyle" v-bind:class="(level === 0)? 'root-class': 'child-class'"></span>
-    <input class="form-check-input" type="checkbox" v-bind:name="code" v-bind:id="code" v-bind:value="code" v-bind:checked="checked" v-on:change="onChangeHandler" >
+    <input class="form-check-input" type="checkbox" v-bind:name="code" v-bind:id="code" v-bind:value="code" />
     <label class="form-check-label" for="inlineRadio1">{{label}}</label>
   </div>
   <div  v-if="hasChildren">
@@ -41,12 +41,6 @@
       },
       nextLevel: function() {
         return this.level + 1;
-      }
-    },
-    methods: {
-      onChangeHandler: function(event) {
-        const code = event.target.name;
-        this.$emit('onChange', code);
       }
     },
   };

@@ -16,6 +16,7 @@ exports[`index spec should render proper 1`] = `
     >
       <div
         class="col-12 col-lg-6"
+        permissiondata="[object Object]"
       >
         <div
           class="card"
@@ -33,12 +34,13 @@ exports[`index spec should render proper 1`] = `
               class="form-group col-md-6"
             >
               <label>
-                Search Code Input
+                Imput permission code.
               </label>
                
               <input
                 class="form-control"
-                placeholder="please input the permission code"
+                id="inputCodeField"
+                placeholder="please input permission code"
                 type="text"
               />
             </div>
@@ -47,12 +49,13 @@ exports[`index spec should render proper 1`] = `
               class="form-group col-md-6"
             >
               <label>
-                Result Code
+                Output permission code.
               </label>
                
               <input
                 class="form-control"
-                placeholder="search result"
+                id="outputCodeField"
+                placeholder="Here will show the search result."
                 readonly=""
                 type="text"
               />
@@ -63,6 +66,7 @@ exports[`index spec should render proper 1`] = `
        
       <div
         class="col-12 col-lg-6"
+        permissiondata="[object Object]"
       >
         <div
           class="card"
@@ -74,6 +78,200 @@ exports[`index spec should render proper 1`] = `
               Tree View
             </h5>
              
+            <div
+              class="tree-panel"
+            >
+              <div
+                checkedlist=""
+              >
+                <div
+                  class="check-item"
+                >
+                  <span
+                    class="root-class"
+                    style="padding-left: 0px;"
+                  />
+                   
+                  <input
+                    class="form-check-input"
+                    id="code A"
+                    name="code A"
+                    type="checkbox"
+                    value="code A"
+                  />
+                   
+                  <label
+                    class="form-check-label"
+                    for="inlineRadio1"
+                  >
+                    label A
+                  </label>
+                </div>
+                 
+                <!---->
+              </div>
+            </div>
+            <div
+              class="tree-panel"
+            >
+              <div
+                checkedlist=""
+              >
+                <div
+                  class="check-item"
+                >
+                  <span
+                    class="root-class"
+                    style="padding-left: 0px;"
+                  />
+                   
+                  <input
+                    class="form-check-input"
+                    id="code B"
+                    name="code B"
+                    type="checkbox"
+                    value="code B"
+                  />
+                   
+                  <label
+                    class="form-check-label"
+                    for="inlineRadio1"
+                  >
+                    label B
+                  </label>
+                </div>
+                 
+                <div>
+                  <div
+                    class="tree-panel"
+                  >
+                    <div>
+                      <div
+                        class="check-item"
+                      >
+                        <span
+                          class="child-class"
+                          style="padding-left: 30px;"
+                        />
+                         
+                        <input
+                          class="form-check-input"
+                          id="code B-1"
+                          name="code B-1"
+                          type="checkbox"
+                          value="code B-1"
+                        />
+                         
+                        <label
+                          class="form-check-label"
+                          for="inlineRadio1"
+                        >
+                          label B-1
+                        </label>
+                      </div>
+                       
+                      <!---->
+                    </div>
+                  </div>
+                  <div
+                    class="tree-panel"
+                  >
+                    <div>
+                      <div
+                        class="check-item"
+                      >
+                        <span
+                          class="child-class"
+                          style="padding-left: 30px;"
+                        />
+                         
+                        <input
+                          class="form-check-input"
+                          id="code B-2"
+                          name="code B-2"
+                          type="checkbox"
+                          value="code B-2"
+                        />
+                         
+                        <label
+                          class="form-check-label"
+                          for="inlineRadio1"
+                        >
+                          label B-2
+                        </label>
+                      </div>
+                       
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tree-panel"
+            >
+              <div
+                checkedlist=""
+              >
+                <div
+                  class="check-item"
+                >
+                  <span
+                    class="root-class"
+                    style="padding-left: 0px;"
+                  />
+                   
+                  <input
+                    class="form-check-input"
+                    id="code C"
+                    name="code C"
+                    type="checkbox"
+                    value="code C"
+                  />
+                   
+                  <label
+                    class="form-check-label"
+                    for="inlineRadio1"
+                  >
+                    label C
+                  </label>
+                </div>
+                 
+                <div>
+                  <div
+                    class="tree-panel"
+                  >
+                    <div>
+                      <div
+                        class="check-item"
+                      >
+                        <span
+                          class="child-class"
+                          style="padding-left: 30px;"
+                        />
+                         
+                        <input
+                          class="form-check-input"
+                          id="code C-1"
+                          name="code C-1"
+                          type="checkbox"
+                          value="code C-1"
+                        />
+                         
+                        <label
+                          class="form-check-label"
+                          for="inlineRadio1"
+                        >
+                          label C-1
+                        </label>
+                      </div>
+                       
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
