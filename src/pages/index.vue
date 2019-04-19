@@ -3,8 +3,8 @@
     <div class="container panel">
       <h1>{{name}}</h1>
       <div class="row">
-        <SearchLabelPanel v-bind:permissionData="permissionData"/>
-        <TreeComponent v-bind:permissionData="permissionData"/>
+        <SearchLabelPanel/>
+        <TreeComponent/>
       </div>
     </div>
   </div>

@@ -16,7 +16,6 @@ exports[`index spec should render proper 1`] = `
     >
       <div
         class="col-12 col-lg-6"
-        permissiondata="[object Object]"
       >
         <div
           class="card"
@@ -66,7 +65,6 @@ exports[`index spec should render proper 1`] = `
        
       <div
         class="col-12 col-lg-6"
-        permissiondata="[object Object]"
       >
         <div
           class="card"
